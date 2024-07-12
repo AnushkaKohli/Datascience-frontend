@@ -26,7 +26,7 @@ const CourseCurriculum = () => {
                                 <p className="text-gray-500">{course.description}</p>
                             </div>
                             <button className="flex rounded-full border border-[#F9EBFC] bg-[#FCF5FE] py-4 px-8 gap-x-2.5 text-magenta hover:text-[#bd3ac2] focus:outline-none focus:ring-2 focus:ring-purple-500">
-                                <img src="public\fi-br-eye.svg" />
+                                <img src="fi-br-eye.svg" />
                                 <span className="">View Curriculum</span>
                             </button>
                         </div>

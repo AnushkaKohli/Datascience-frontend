@@ -5,7 +5,7 @@ const Hero = () => {
       <div className="md:px-32 w-2/3">
         {/* Box */}
         <div className="px-5 py-4 border border-[#FFA50B] rounded-2xl w-fit flex gap-x-2 tracking-wide">
-          <img src="public\Graduation hat.svg" />
+          <img src="Graduation hat.svg" />
           <p>
             An <span className="font-semibold">IIT Delhi</span> Alumni Initiative
           </p>
@@ -18,15 +18,15 @@ const Hero = () => {
         {/* CTC */}
         <div className="flex gap-x-3.5">
           <div className="flex gap-x-1.5 bg-[#FFFCEA] border border-[#FFF4C5] rounded-full py-3 px-4">
-            <img src="public\award_star.svg" />
+            <img src="award_star.svg" />
             <p className="text-[#BB5302]">Personal Mentorship</p>
           </div>
           <div className="flex gap-x-1.5 bg-[#FFFCEA] border border-[#FFF4C5] rounded-full py-3 px-4">
-            <img src="public\award_star.svg" />
+            <img src="award_star.svg" />
             <p className="text-[#BB5302]">Internship Assistance</p>
           </div>
           <div className="flex gap-x-1.5 bg-[#FFFCEA] border border-[#FFF4C5] rounded-full py-3 px-4">
-            <img src="public\award_star.svg" />
+            <img src="award_star.svg" />
             <p className="text-[#BB5302]">Industry Certified Courses</p>
           </div>
         </div>
@@ -34,11 +34,11 @@ const Hero = () => {
         <div className="flex gap-x-3 pt-8 pb-16">
           <button className="flex gap-x-1 rounded-2xl px-10 py-5 bg-gradient-to-b from-[#B73BBE] to-magenta hover:bg-[#99319e] shadow-3xl">
             <p className="text-[#FCF5FE]">Enroll Now</p>
-            <img src="public\fi-br-paper-plane.svg" />
+            <img src="fi-br-paper-plane.svg" />
           </button>
           <button className="flex gap-x-3 px-6 py-5">
             <p className="text-magenta font-semibold">Know More</p>
-            <img src="public\fi-br-interrogation.svg" />
+            <img src="fi-br-interrogation.svg" />
           </button>
         </div>
       </div>
@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="bg-[#F9EBFC] flex justify-between items-center py-9 px-32">
         {/* Courses */}
         <div className="flex gap-x-3">
-          <img src='public\Courses.svg' />
+          <img src='Courses.svg' />
           <div className='flex flex-col gap-y-0.5'>
             <p className='font-semibold text-magenta text-4xl'>24</p>
             <p className='text-[#686972]'>Courses</p>
@@ -56,7 +56,7 @@ const Hero = () => {
         <div className="w-[1px] h-[80px] bg-[#F4D6F8]"></div>
         {/* <Learners /> */}
         <div className="flex gap-x-3">
-          <img src='public\Learners.svg' />
+          <img src='Learners.svg' />
           <div className='flex flex-col gap-y-0.5'>
             <p className='font-semibold text-magenta text-4xl'>30k+</p>
             <p className='text-[#686972]'>Learners</p>
@@ -66,7 +66,7 @@ const Hero = () => {
         <div className="w-[1px] h-[80px] bg-[#F4D6F8]"></div>
         {/* Doubts Solved */}
         <div className="flex gap-x-3">
-          <img src='public\DoubtsSolved.svg' />
+          <img src='DoubtsSolved.svg' />
           <div className='flex flex-col gap-y-0.5'>
             <p className='font-semibold text-magenta text-4xl'>100k+</p>
             <p className='text-[#686972]'>Doubts Solved</p>
@@ -76,7 +76,7 @@ const Hero = () => {
         <div className="w-[1px] h-[80px] bg-[#F4D6F8]"></div>
         {/* Student Projects */}
         <div className="flex gap-x-3">
-          <img src='public\StudentProjects.svg' />
+          <img src='StudentProjects.svg' />
           <div className='flex flex-col gap-y-0.5'>
             <p className='font-semibold text-magenta text-4xl'>10k+</p>
             <p className='text-[#686972]'>Student Projects</p>

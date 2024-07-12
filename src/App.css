@@ -35,3 +35,76 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  /*  overflow: hidden;  remove this line*/
+
+  /* New additions */
+  height: 10px;
+  background: white;
+  opacity: 15;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 22px;
+  width: 22px;
+  background-color: #FFC41B;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  /* box-shadow: -407px 0 0 400px #f50; emove this line */
+  transition: .2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  background-color: #FFC41B;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  /* box-shadow: -407px 0 0 400px #f50; emove this line */
+  transition: .2s ease-in-out;
+}
+
+/* Hover, active & focus Thumb: Webkit */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px #ffc21b2c
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px #ffc21b2c
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px #ffc21b2c
+}
+
+/* Hover, active & focus Thumb: Firfox */
+
+input[type="range"]::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 10px #ffc21b2c
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  box-shadow: 0 0 0 13px #ffc21b2c
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 13px #ffc21b2c
+}
