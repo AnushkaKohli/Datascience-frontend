@@ -10,7 +10,7 @@ const Refund = () => {
     }
     const progress = (sliderValue / maxSliderValue) * 100;
     return (
-        <div className="md:px-32 md:py-16 flex flex-col gap-y-14 font-poppins items-center">
+        <div className="px-6 md:px-32 md:py-16 flex flex-col gap-y-14 font-poppins items-center">
             {/* Heading */}
             <h1 className="font-bold text-5xl text-[#686972] w-3/5 pb-14">
                 Don't miss out on this
@@ -26,10 +26,6 @@ const Refund = () => {
                     </h1>
                     <img src='scribble final version-24.svg' className='relative left-[24.50rem] -top-[4rem]' />
                 </div>
-                {/* <h1 className="font-bold text-3xl text-white">
-                    100% Refund Offer 😎
-                    <img src='scribble final version-24.svg' className='relative left-[24.50rem] -top-[4rem]' />
-                </h1> */}
                 {/* Range */}
                 <div className="flex flex-col gap-y-3.5 w-full text-start range">
                     <div className="value text-lg text-white text-opacity-70">{sliderValue} Seats Left</div>
@@ -47,119 +43,166 @@ const Refund = () => {
                 {/* Heading */}
                 <h1 className='text-[#450D45] font-extrabold text-4xl leading-[54px] tracking-tight'>How does it work?</h1>
                 {/* Steps */}
-                {/* <div className='flex md:flex-row justify-between items-start gap-6'>
-                    <div className="flex-1 text-center md:text-left p-6 bg-purple-50 rounded-lg shadow-md">
-                        <div className="flex items-center mb-4">
-                            <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-2">
-                                <span className="font-bold">1</span>
+                {/* Mobile steps illustration*/}
+                {/* <div className="w-12 flex flex-col items-start justify-center relative gap-[223px] lg:hidden">
+                    <div className="self-stretch h-[60px] flex flex-row items-center justify-center relative gap-[10px] z-[1]">
+                        <img
+                            className="h-full w-full absolute !m-[0] top-[0px] left-[0px]"
+                            alt=""
+                            src="steps-mobile.svg"
+                        />
+                        <a className="[text-decoration:none] absolute !m-[0] top-[15px] left-[calc(50%_-_4px)] tracking-[-0.02em] font-bold text-[inherit] inline-block min-w-[8px] z-[1]">
+                            1
+                        </a>
+                    </div>
+                    <div className="self-stretch h-[60px] flex flex-row items-center justify-center relative gap-[10px] z-[1]">
+                        <img
+                            className="h-full w-full absolute !m-[0] top-[0px] left-[0px]"
+                            alt=""
+                            src="steps-mobile.svg"
+                        />
+                        <b className="absolute !m-[0] top-[15px] left-[calc(50%_-_6px)] tracking-[-0.02em] inline-block min-w-[12px] z-[1]">
+                            2
+                        </b>
+                    </div>
+                    <div className="self-stretch h-[60px] flex flex-row items-center justify-center relative gap-[10px] z-[1]">
+                        <img
+                            className="h-full w-full absolute !m-[0] top-[0px] left-[0px]"
+                            alt=""
+                            src="steps-mobile.svg"
+                        />
+                        <b className="w-[13px] absolute !m-[0] top-[15px] left-[calc(50%_-_6px)] tracking-[-0.02em] inline-block min-w-[13px] z-[1]">
+                            3
+                        </b>
+                    </div>
+                </div> */}
+                {/* Steps Card */}
+                <div className=' flex flex-col lg:flex-row justify-between items-start gap-y-8 lg:gap-x-6'>
+                    {/* Step 1 */}
+                    <div className='flex flex-col justify-center items-center gap-y-6'>
+                        <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
+                            <img
+                                className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                loading="lazy"
+                                alt="steps-arrow"
+                                src="steps.svg"
+                            />
+                            <div className="w-[84px] relative tracking-[-0.03em] font-medium text-[#FCF5FE] px-5 z-[1]">
+                                Step 1
                             </div>
-                            <h3 className="text-lg font-bold text-purple-500">Step 1</h3>
                         </div>
-                        <p className="font-semibold mb-2">Enroll into your favorite course for only ₹1,499</p>
-                        <p>Start Learning with <strong>Lifetime Course Access</strong>.</p>
-                        <img src='' alt="Enroll" className="mt-4 mx-auto" />
+                        <div className='flex flex-col justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
+                            <p className='text-xl font-semibold text-[#7F2781]'>Step 1 : Enroll into your favorite course for only ₹1,499</p>
+                            <img src="step1.svg" alt='step 1' className='h-24' />
+                            <p>Start Learning with <span className='font-semibold'>Lifetime Course Access.</span></p>
+                        </div>
                     </div>
-                </div> */}
-                {/* <div className="after:mt-4 after:block after:h-1 after:w-full after:rounded-lg after:bg-gray-200 mx-56">
-                    <ol className="grid grid-cols-3 text-sm font-medium">
-                        <li className="relative flex justify-start">
-                            <img src="steps.svg" alt="Step 1" className="w-24 h-10 absolute -bottom-[2.3rem] -start-[10px] z-0" />
-                            <span className="text-red-900 text-lg z-1 mt-8"> Step 1 </span>
-                        </li>
-
-                        <li className="relative flex justify-center text-blue-600">
-                            <span
-                                className="absolute -bottom-[1.75rem] left-1/2 -translate-x-1/2 rounded-full bg-blue-600 text-white"
-                            >
-                                <svg
-                                    className="h-5 w-5"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
-                            </span>
-
-                            <span className="hidden sm:block"> Address </span>
-
-                            <svg
-                                className="mx-auto size-6 sm:hidden"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                />
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                            </svg>
-                        </li>
-
-                        <li className="relative flex justify-end">
-                            <span className="absolute -bottom-[1.75rem] end-0 rounded-full bg-gray-600 text-white">
-                                <svg
-                                    className="h-5 w-5"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
-                            </span>
-
-                            <span className="hidden sm:block"> Payment </span>
-
-                            <svg
-                                className="size-6 sm:hidden"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                                />
-                            </svg>
-                        </li>
-                    </ol>
+                    {/* Step 2 */}
+                    <div className='flex flex-col justify-center items-center gap-y-6'>
+                        <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
+                            <img
+                                className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                loading="lazy"
+                                alt="steps-arrow"
+                                src="steps.svg"
+                            />
+                            <div className="w-[84px] relative tracking-[-0.03em] font-medium text-[#FCF5FE] px-5 z-[1]">
+                                Step 2
+                            </div>
+                        </div>
+                        <div className='flex flex-col justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
+                            <p className='text-xl font-semibold text-[#7F2781]'>Step 2: Complete Course & Assignments within 2 Years!</p>
+                            <div className='flex justify-start items-center gap-x-4 p-4 rounded-2xl border border-[#E5E5E8]'>
+                                <p className='bg-gradient-to-b from-[#FFA50B] to-[#E27900] bg-clip-text text-transparent font-bold text-4xl'>2</p>
+                                <p className='text-[#4C4D52]'>years time from the date of enrollment</p>
+                            </div>
+                            <p>Finish the course within <span className='font-semibold'>2 Years </span>to Qualify for Refund.</p>
+                        </div>
+                    </div>
+                    {/* Step 3 */}
+                    <div className='flex flex-col justify-center items-center gap-y-6'>
+                        <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
+                            <img
+                                className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                loading="lazy"
+                                alt="steps-arrow"
+                                src="steps.svg"
+                            />
+                            <div className="w-[84px] relative tracking-[-0.03em] font-medium text-[#FCF5FE] px-5 z-[1]">
+                                Step 3
+                            </div>
+                        </div>
+                        <div className='flex flex-col justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
+                            <p className='text-xl font-semibold text-[#7F2781]'>Step 3: Receive 100% Refund upon completion</p>
+                            <div className='flex justify-start items-center gap-x-4 p-4 rounded-2xl border border-[#E5E5E8]'>
+                                <p className='bg-gradient-to-b from-[#FFA50B] to-[#E27900] bg-clip-text text-transparent font-bold text-4xl'>100%</p>
+                                <p className='text-[#4C4D52]'>Enrollment Fee is refunded</p>
+                            </div>
+                            <p>Upon Course Completion within <span className='font-semibold'>2 Years, </span>Get Your <span className='font-semibold'>₹1,499 Back.</span></p>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex justify-center items-center my-8">
-                    <div className="relative flex items-center">
-                        <div className="flex-1 border-t border-gray-200"></div>
-                        <div className="flex-shrink-0 mx-2">
 
+
+
+                {/* <section className="self-stretch flex flex-row items-start justify-start gap-[22px] text-center text-xl text-white font-poppins">
+
+                    <div className="flex-1 flex flex-col items-start justify-start gap-[32px] text-left text-base text-eminence-800">
+                        <div className="self-stretch rounded-lg [background:linear-gradient(180deg,_#fff,_#fcf5fe)] overflow-hidden flex flex-col items-start justify-start py-3.5 px-[15px] gap-[14.5px] border-[1px] border-solid border-eminence-100">
+                            <a className="[text-decoration:none] self-stretch relative tracking-[-0.03em] font-semibold text-[inherit]">
+                                Step 1 : Enroll into your favorite course for only ₹699
+                            </a>
+                            <div className="flex flex-row items-center justify-center py-px px-[54px]">
+                                <img
+                                    className="h-[69px] w-[102px] relative object-cover"
+                                    loading="lazy"
+                                    alt=""
+                                    src="/image-533@2x.png"
+                                />
+                            </div>
+                            <div className="self-stretch relative text-sm text-darkslategray">
+                                <span className="font-medium">{`Start Learning with `}</span>
+                                <span className="font-semibold text-gray">
+                                    Lifetime Course Access.
+                                </span>
+                            </div>
                         </div>
-                        <div className="flex-1 border-t border-gray-200"></div>
-                        <div className="flex-shrink-0 mx-2">
-                            <img src="steps.svg" alt="Step 2" className="w-24 h-10" />
+                        <div className="self-stretch rounded-lg [background:linear-gradient(180deg,_#fff,_#fcf5fe)] overflow-hidden flex flex-col items-start justify-start py-3.5 px-[15px] gap-[14.5px] border-[1px] border-solid border-eminence-100">
+                            <div className="self-stretch relative tracking-[-0.03em] font-semibold">{`Step 2: Complete Course & Assignments within 3 Months!`}</div>
+                            <div className="self-stretch rounded-lg overflow-hidden flex flex-row items-center justify-center py-1 px-[15px] gap-[4px] text-13xl text-woodsmoke-700 border-[1px] border-solid border-woodsmoke-100">
+                                <b className="relative tracking-[-0.03em] inline-block text-transparent !bg-clip-text [background:linear-gradient(180deg,_#ffa50b,_#e27900)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] min-w-[20px]">
+                                    3
+                                </b>
+                                <div className="flex-1 relative text-xs tracking-[-0.03em]">
+                                    months time from the date of enrollment
+                                </div>
+                            </div>
+                            <div className="self-stretch relative text-sm text-darkslategray">
+                                <span className="font-medium">{`Finish within `}</span>
+                                <span className="font-semibold text-gray">3 Months</span>
+                                <span className="font-medium"> to Qualify for Refund.</span>
+                            </div>
                         </div>
-                        <div className="flex-1 border-t border-gray-200"></div>
-                        <div className="flex-shrink-0 mx-2">
-                            <img src="steps.svg" alt="Step 3" className="w-24 h-10" />
+                        <div className="self-stretch rounded-lg [background:linear-gradient(180deg,_#fff,_#fcf5fe)] overflow-hidden flex flex-col items-start justify-start py-3.5 px-[15px] gap-[16px] border-[1px] border-solid border-eminence-100">
+                            <div className="self-stretch relative tracking-[-0.03em] font-semibold">
+                                Step 3: Receive 100% Refund upon completion
+                            </div>
+                            <div className="self-stretch rounded-lg overflow-hidden flex flex-row items-center justify-center py-[11px] px-[15px] gap-[8px] text-13xl text-woodsmoke-700 border-[1px] border-solid border-woodsmoke-100">
+                                <b className="relative tracking-[-0.03em] inline-block text-transparent !bg-clip-text [background:linear-gradient(180deg,_#ffa50b,_#e27900)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] min-w-[79px]">
+                                    100%
+                                </b>
+                                <div className="flex-1 relative text-xs tracking-[-0.03em]">
+                                    Enrollment Fee is refunded
+                                </div>
+                            </div>
+                            <div className="self-stretch relative text-sm text-darkslategray">
+                                <span className="font-medium">{`Upon Course Completion within 3 months, Get Your `}</span>
+                                <span className="font-semibold text-gray">₹699 Back.</span>
+                            </div>
                         </div>
-                        <div className="flex-1 border-t border-gray-200"></div>
                     </div>
-                </div> */}
+                </section> */}
+
             </div>
         </div >
     )
