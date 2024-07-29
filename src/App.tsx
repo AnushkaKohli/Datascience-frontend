@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CourseCurriculum from './components/CourseCurriculum'
 import Refund from './components/Refund'
+import TopCompanies from './components/TopCompanies'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <CourseCurriculum />
       <Refund />
+      <TopCompanies />
     </div>
   )
 }

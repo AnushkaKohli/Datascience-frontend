@@ -10,16 +10,16 @@ const Refund = () => {
     }
     const progress = (sliderValue / maxSliderValue) * 100;
     return (
-        <div className="px-6 md:px-32 md:py-16 flex flex-col gap-y-14 font-poppins items-center">
+        <div className="px-6 md:px-32 py-16 flex flex-col gap-y-14 font-poppins items-center">
             {/* Heading */}
-            <h1 className="font-bold text-5xl text-[#686972] w-3/5 pb-14">
+            <h1 className="font-bold text-5xl text-[#686972] lg:w-3/5 pb-14">
                 Don't miss out on this
                 <span className="bg-gradient-to-r from-[#B73BBE] to-[#992E9D] bg-clip-text text-transparent"> limited-time opportunity </span>
                 to learn for
                 <span className="bg-gradient-to-r from-[#B73BBE] to-[#992E9D] bg-clip-text text-transparent"> Free!</span>
             </h1>
             {/* Seats Left Box */}
-            <div className="w-2/5 flex flex-col gap-y-3 items-center rounded-4xl bg-gradient-to-r from-[#9849FF] to-[#841EE3] shadow-4xl px-5 py-8">
+            <div className="lg:w-2/5 flex flex-col gap-y-3 items-center rounded-4xl bg-gradient-to-r from-[#9849FF] to-[#841EE3] shadow-4xl px-5 py-8">
                 <div className='-mb-20'>
                     <h1 className="font-bold text-3xl text-white">
                         100% Refund Offer 😎
@@ -77,31 +77,32 @@ const Refund = () => {
                     </div>
                 </div> */}
                 {/* Steps Card */}
-                <div className=' flex flex-col lg:flex-row justify-between items-start gap-y-8 lg:gap-x-6'>
+                <div className='pb-28 flex flex-col lg:flex-row justify-between items-stretch gap-y-8 lg:gap-x-6'>
                     {/* Step 1 */}
-                    <div className='flex flex-col justify-center items-center gap-y-6'>
+                    <div className='flex-1 flex flex-col justify-center items-center gap-y-6'>
                         <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
                             <img
-                                className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                className="z-[1] h-full w-full absolute max-w-full max-h-full"
                                 loading="lazy"
                                 alt="steps-arrow"
                                 src="steps.svg"
                             />
-                            <div className="w-[84px] relative tracking-[-0.03em] font-medium text-[#FCF5FE] px-5 z-[1]">
+                            <div className="z-[2] w-[84px] relative tracking-[-0.03em] font-medium text-[#FCF5FE] px-5">
                                 Step 1
                             </div>
+                            {/* <div className='z-[0] border border-black w-full absolute top-4 left-4'></div> */}
                         </div>
-                        <div className='flex flex-col justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
+                        <div className='flex flex-col h-full w-full justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
                             <p className='text-xl font-semibold text-[#7F2781]'>Step 1 : Enroll into your favorite course for only ₹1,499</p>
                             <img src="step1.svg" alt='step 1' className='h-24' />
                             <p>Start Learning with <span className='font-semibold'>Lifetime Course Access.</span></p>
                         </div>
                     </div>
                     {/* Step 2 */}
-                    <div className='flex flex-col justify-center items-center gap-y-6'>
+                    <div className='flex-1 flex flex-col justify-center items-center gap-y-6'>
                         <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
                             <img
-                                className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                className="h-full w-full absolute max-w-full max-h-full"
                                 loading="lazy"
                                 alt="steps-arrow"
                                 src="steps.svg"
@@ -110,7 +111,7 @@ const Refund = () => {
                                 Step 2
                             </div>
                         </div>
-                        <div className='flex flex-col justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
+                        <div className='flex flex-col h-full w-full justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
                             <p className='text-xl font-semibold text-[#7F2781]'>Step 2: Complete Course & Assignments within 2 Years!</p>
                             <div className='flex justify-start items-center gap-x-4 p-4 rounded-2xl border border-[#E5E5E8]'>
                                 <p className='bg-gradient-to-b from-[#FFA50B] to-[#E27900] bg-clip-text text-transparent font-bold text-4xl'>2</p>
@@ -120,10 +121,10 @@ const Refund = () => {
                         </div>
                     </div>
                     {/* Step 3 */}
-                    <div className='flex flex-col justify-center items-center gap-y-6'>
+                    <div className='flex-1 flex flex-col justify-center items-center gap-y-6'>
                         <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
                             <img
-                                className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                className="h-full w-full absolute max-w-full max-h-full"
                                 loading="lazy"
                                 alt="steps-arrow"
                                 src="steps.svg"
@@ -132,7 +133,7 @@ const Refund = () => {
                                 Step 3
                             </div>
                         </div>
-                        <div className='flex flex-col justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
+                        <div className='flex flex-col h-full w-full justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
                             <p className='text-xl font-semibold text-[#7F2781]'>Step 3: Receive 100% Refund upon completion</p>
                             <div className='flex justify-start items-center gap-x-4 p-4 rounded-2xl border border-[#E5E5E8]'>
                                 <p className='bg-gradient-to-b from-[#FFA50B] to-[#E27900] bg-clip-text text-transparent font-bold text-4xl'>100%</p>
@@ -142,7 +143,6 @@ const Refund = () => {
                         </div>
                     </div>
                 </div>
-
 
 
                 {/* <section className="self-stretch flex flex-row items-start justify-start gap-[22px] text-center text-xl text-white font-poppins">
