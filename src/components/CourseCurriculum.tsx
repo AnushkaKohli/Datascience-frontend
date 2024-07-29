@@ -6,13 +6,13 @@ const CourseCurriculum = () => {
         { name: 'Competitive Programming', description: 'Excel in Data Structures and Algorithms for interview success.' }
     ];
     return (
-        <div className="bg-[#FCF5FE] flex flex-col gap-y-14 justify-center items-center py-11 lg:py-28 px-6 lg:px-32 font-poppins">
+        <div className="bg-[#FCF5FE] flex flex-col gap-y-10 lg:gap-y-14 justify-center items-center py-11 lg:py-28 px-6 lg:px-32 mb-10 lg:mb-24 font-poppins">
             {/* Heading */}
-            <div className="flex flex-col gap-y-5 items-center">
-                <div className="border border-[#F4D6F8] rounded-full py-4 px-7 mb-5 bg-[#F9EBFC] text-magenta w-fit">
+            <div className="flex flex-col gap-y-2 lg:gap-y-5 items-center">
+                <div className="border border-[#F4D6F8] rounded-full py-4 px-7 mb-5 bg-[#F9EBFC] text-magenta w-fit text-sm lg:text-base">
                     DATASCIENCE COURSE LEARNING PATH
                 </div>
-                <p className="font-bold text-5xl">
+                <p className="font-bold text-2xl lg:text-5xl">
                     <span className="bg-gradient-to-r from-[#B73BBE] to-[#EBCB2E] bg-clip-text text-transparent">Data Science </span>Course Curriculum
                 </p>
             </div>
@@ -22,12 +22,12 @@ const CourseCurriculum = () => {
                     courses.map((course) => (
                         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-y-3 px-8 py-4 border-b border-gray-200">
                             <div className="text-start">
-                                <h2 className="text-xl font-semibold">{course.name}</h2>
-                                <p className="text-gray-500">{course.description}</p>
+                                <h2 className="text-base lg:text-xl font-semibold">{course.name}</h2>
+                                <p className="text-sm lg:text-base text-gray-500">{course.description}</p>
                             </div>
-                            <button className="flex w-full items-center justify-center md:w-fit rounded-xl md:rounded-full border border-[#F9EBFC] bg-[#FCF5FE] py-4 px-8 gap-x-2.5 text-magenta hover:text-[#bd3ac2] focus:outline-none focus:ring-2 focus:ring-purple-500">
-                                <img src="fi-br-eye.svg" />
-                                <span className="">View Curriculum</span>
+                            <button className="flex w-full items-center justify-center md:w-fit rounded-xl md:rounded-full border border-[#F9EBFC] bg-[#FCF5FE] py-3 lg:py-4 px-8 gap-x-2.5 text-magenta hover:text-[#bd3ac2] focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <img className="h-5 lg:h-full" src="fi-br-eye.svg" />
+                                <span className="text-sm lg:text-base">View Curriculum</span>
                             </button>
                         </div>
                     ))
