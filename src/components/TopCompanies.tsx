@@ -1,8 +1,8 @@
 const TopCompanies = () => {
     return (
-        <div className="px-6 md:px-32 py-12 mb-24 bg-[#FFFCEA]">
+        <div className="px-6 md:px-32 py-12 mb-10 lg:mb-24 bg-[#FFFCEA]">
             {/* Heading */}
-            <h1 className="font-poppins text-[#374957] font-bold text-5xl">Top Companies Hiring
+            <h1 className="font-poppins text-[#374957] font-bold text-3xl lg:text-5xl">Top Companies Hiring
                 <span className="bg-gradient-to-r from-[#B73BBE] to-[#EBCB2E] bg-clip-text text-transparent"> Data Scientist</span>
             </h1>
             {/* Logos */}

@@ -10,9 +10,9 @@ const Refund = () => {
     }
     const progress = (sliderValue / maxSliderValue) * 100;
     return (
-        <div className="px-6 md:px-32 py-16 flex flex-col gap-y-14 font-poppins items-center">
+        <div className="px-6 md:px-32 pt-8 lg:pt-16 pb-20 lg:pb-28 flex flex-col gap-y-14 font-poppins items-center">
             {/* Heading */}
-            <h1 className="font-bold text-5xl text-[#686972] lg:w-3/5 pb-14">
+            <h1 className="font-bold text-2xl lg:text-5xl text-[#686972] lg:w-3/5 lg:pb-14">
                 Don't miss out on this
                 <span className="bg-gradient-to-r from-[#B73BBE] to-[#992E9D] bg-clip-text text-transparent"> limited-time opportunity </span>
                 to learn for
@@ -41,7 +41,7 @@ const Refund = () => {
             {/* How does it work? */}
             <div className='flex flex-col gap-y-6 w-full'>
                 {/* Heading */}
-                <h1 className='text-[#450D45] font-extrabold text-4xl leading-[54px] tracking-tight'>How does it work?</h1>
+                <h1 className='text-[#450D45] font-extrabold text-2xl lg:text-4xl leading-[54px] tracking-tight'>How does it work?</h1>
                 {/* Steps */}
                 {/* Mobile steps illustration*/}
                 {/* <div className="w-12 flex flex-col items-start justify-center relative gap-[223px] lg:hidden">
@@ -77,7 +77,7 @@ const Refund = () => {
                     </div>
                 </div> */}
                 {/* Steps Card */}
-                <div className='pb-28 flex flex-col lg:flex-row justify-between items-stretch gap-y-8 lg:gap-x-6'>
+                <div className='lg:pb-28 flex flex-col lg:flex-row justify-between items-stretch gap-y-8 lg:gap-x-6'>
                     {/* Step 1 */}
                     <div className='flex-1 flex flex-col justify-center items-center gap-y-6'>
                         <div className='hidden lg:flex w-[92px] h-10 flex-row items-center justify-center relative gap-[10px] mq450:w-[calc(100%_-_40px)]'>
@@ -93,7 +93,7 @@ const Refund = () => {
                             {/* <div className='z-[0] border border-black w-full absolute top-4 left-4'></div> */}
                         </div>
                         <div className='flex flex-col h-full w-full justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
-                            <p className='text-xl font-semibold text-[#7F2781]'>Step 1 : Enroll into your favorite course for only ₹1,499</p>
+                            <p className='text-base lg:text-xl font-semibold text-[#7F2781]'>Step 1 : Enroll into your favorite course for only ₹1,499</p>
                             <img src="step1.svg" alt='step 1' className='h-24' />
                             <p>Start Learning with <span className='font-semibold'>Lifetime Course Access.</span></p>
                         </div>
@@ -112,8 +112,8 @@ const Refund = () => {
                             </div>
                         </div>
                         <div className='flex flex-col h-full w-full justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
-                            <p className='text-xl font-semibold text-[#7F2781]'>Step 2: Complete Course & Assignments within 2 Years!</p>
-                            <div className='flex justify-start items-center gap-x-4 p-4 rounded-2xl border border-[#E5E5E8]'>
+                            <p className='text-base lg:text-xl font-semibold text-[#7F2781]'>Step 2: Complete Course & Assignments within 2 Years!</p>
+                            <div className='flex justify-start items-center gap-x-2 lg:gap-x-4 p-4 rounded-lg lg:rounded-2xl border border-[#E5E5E8]'>
                                 <p className='bg-gradient-to-b from-[#FFA50B] to-[#E27900] bg-clip-text text-transparent font-bold text-4xl'>2</p>
                                 <p className='text-[#4C4D52]'>years time from the date of enrollment</p>
                             </div>
@@ -134,8 +134,8 @@ const Refund = () => {
                             </div>
                         </div>
                         <div className='flex flex-col h-full w-full justify-between rounded-2xl border border-[#F9EBFC] p-5 gap-y-4 bg-gradient-to-b from-[#FFFFFF] to-[#FCF5FE]'>
-                            <p className='text-xl font-semibold text-[#7F2781]'>Step 3: Receive 100% Refund upon completion</p>
-                            <div className='flex justify-start items-center gap-x-4 p-4 rounded-2xl border border-[#E5E5E8]'>
+                            <p className='text-base lg:text-xl font-semibold text-[#7F2781]'>Step 3: Receive 100% Refund upon completion</p>
+                            <div className='flex justify-start items-center gap-x-2 lg:gap-x-4 p-4 rounded-lg lg:rounded-2xl border border-[#E5E5E8]'>
                                 <p className='bg-gradient-to-b from-[#FFA50B] to-[#E27900] bg-clip-text text-transparent font-bold text-4xl'>100%</p>
                                 <p className='text-[#4C4D52]'>Enrollment Fee is refunded</p>
                             </div>
