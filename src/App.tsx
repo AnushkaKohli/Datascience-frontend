@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import CourseCurriculum from './components/CourseCurriculum'
 import Refund from './components/Refund'
 import TopCompanies from './components/TopCompanies'
+import Unlock from './components/Unlock'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <CourseCurriculum />
       <Refund />
       <TopCompanies />
+      <Unlock />
     </div>
   )
 }
